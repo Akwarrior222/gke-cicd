@@ -23,6 +23,7 @@ steps:
 #  id: 'Push Docker Image2'
 
 - name: "gcr.io/cloud-builders/gcloud"
+  entrypoint: "bash"
   waitFor: ["-"]
   id: "manual-approval"
     
