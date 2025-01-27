@@ -23,7 +23,10 @@ steps:
 #  id: 'Push Docker Image2'
 
 - name: "gcr.io/cloud-builders/gcloud"
-  args: ["echo", "Waiting for manual approval..."]
+  args:
+    - "-c"
+    - |
+      echo "Please approve the deployment to production in the Google Cloud Console or via other mechanisms."
   waitFor: ["-"]
   id: "manual-approval"
     
