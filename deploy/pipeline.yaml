@@ -9,7 +9,7 @@ serialPipeline:
   stages:
   - targetId: dev
     profiles: []
-    requireApproval: true
+  # requireApproval: true
   # - targetId: staging
   #   profiles:
   #   - staging
