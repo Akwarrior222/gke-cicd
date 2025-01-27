@@ -17,7 +17,7 @@ spec:
           image: us-central1-docker.pkg.dev/clever-axe-447305-k1/sample-images-repo/simple-python-app1:V7.1
           ports:
             - containerPort: 8080
-#commit-test-
+#commit-test
 apiVersion: v1
 kind: Service
 metadata:
