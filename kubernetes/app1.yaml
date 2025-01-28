@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: my-python-deployment
+  name: my-webapp-deployment
 spec:
   replicas: 2
   selector:
@@ -14,19 +14,19 @@ spec:
     spec:
       containers:
         - name: my-container
-          image: us-central1-docker.pkg.dev/clever-axe-447305-k1/sample-images-repo/simple-python-app1:V9.2
+          image: us-central1-docker.pkg.dev/clever-axe-447305-k1/sample-images-repo/simple-web-app:carv1
           ports:
-            - containerPort: 8080
+            - containerPort: 80
 #commit-test
 apiVersion: v1
 kind: Service
 metadata:
-  name: my-py-service
+  name: my-webapp-service
 spec:
   selector:
     app: my-app
   ports:
     - protocol: TCP
       port: 80
-      targetPort: 8080
+      targetPort: 80
   type: LoadBalancer
