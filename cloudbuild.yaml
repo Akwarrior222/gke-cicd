@@ -28,6 +28,7 @@ steps:
 #  id: "manual-approval"
     
 - name: 'google/cloud-sdk:latest'
+  id: Deployment Ready
   entrypoint: 'sh'
   args:
   - -xe
