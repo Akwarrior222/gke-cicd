@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: my-container
-          image: us-central1-docker.pkg.dev/clever-axe-447305-k1/sample-images-repo/simple-web-app:carv1
+          image: us-central1-docker.pkg.dev/clever-axe-447305-k1/sample-images-repo/simple-web-app:carv2.1
           ports:
             - containerPort: 80
 #commit-test-
